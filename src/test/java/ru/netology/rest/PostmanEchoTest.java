@@ -20,7 +20,7 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", org.hamcrest.Matchers.equalTo("Сборка должна упасть"));
+                .body("data", org.hamcrest.Matchers.equalTo(message));
         ;
     }
 }
